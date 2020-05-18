@@ -36,10 +36,7 @@
   
   
   <GlobalNamingResources>
-		<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" 
-		maxActive="20" maxIdle="10" maxWait="-1" 
-		name="jdbc/myoracle" username="kosmo" password="1234" type="javax.sql.DataSource" 
-		url="jdbc:oracle:thin:@localhost:1521:orcl" />
+		<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="3" maxIdle="10" maxWait="0" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:orcl" username="kosmo"/>
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
